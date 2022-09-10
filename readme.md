@@ -29,7 +29,28 @@ Convert application in command line app, implements CommandLineRunner
 public class DemoApplication implements CommandLineRunner{
 ```
 
-Add unimplemented methods, and in method *run* add code for GCP Storage
+Add unimplemented methods, add dependency Google Cloud Storage in pom.xml https://mvnrepository.com/artifact/com.google.cloud/google-cloud-storage/2.11.3
+
+```xml
+<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-storage -->
+<dependency>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-storage</artifactId>
+    <version>2.11.3</version>
+</dependency>
+```
+
+In method *run* add code for GCP Storage
+
+Imports:
+
+```java
+import com.google.cloud.storage.BucketInfo;
+import com.google.cloud.storage.Storage;
+import com.google.cloud.storage.StorageOptions;
+```
+
+Method:
 
 ```java
 	@Override
