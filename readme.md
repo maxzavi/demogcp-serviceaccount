@@ -4,7 +4,7 @@ Log in  GCP console and click on the hamburger icon at the top left corner.
 Hover on IAM & Admin > click on Service Accounts.
 Click on + Create Service Account.
 Provide Service Account Details including the account Name, ID, and Description. Click Create.
-Provide role  for the project.
+Provide role  for the project. Add "Cloud Storage Adminstrator" rol
 Click on + Create Key.
 Select the Key Type as JSON and click Create. 
 
